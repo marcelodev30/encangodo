@@ -8,11 +8,12 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 235,
-      width: 720,
-      decoration: BoxDecoration(
-          color: const Color.fromRGBO(78, 111, 67, 1),
-          borderRadius: BorderRadius.circular(54)),
+      height: 215,
+      decoration: const BoxDecoration(
+          color: Color.fromRGBO(78, 111, 67, 1),
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.elliptical(40, 40),
+          bottomRight: Radius.elliptical(40, 40),)),
       child: SafeArea(
         child: Padding(
           padding:
@@ -68,7 +69,7 @@ class NavBar extends StatelessWidget {
                 child: Row(
                   children: [
                     Container(
-                      width: 280,
+                      width: 260,
                       height: 72,
                       margin: const EdgeInsets.only(right: 10),
                       decoration: BoxDecoration(
@@ -95,8 +96,8 @@ class NavBar extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 60,
-                      width: 110,
+                      height: 50,
+                      width: 100,
                       padding: const EdgeInsets.only(left: 10),
                       decoration: BoxDecoration(
                           color: const Color.fromRGBO(202, 195, 88, 1),
@@ -105,14 +106,14 @@ class NavBar extends StatelessWidget {
                         children: [
                           Image.asset(
                             'img/moeda.png',
-                            height: 39,
+                            height: 30,
                           ),
-                          const SizedBox(width: 5),
+                          const SizedBox(width: 4),
                           const Text(
                             '12',
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
-                                fontSize: 39,
+                                fontSize: 37,
                                 color: Colors.white),
                           )
                         ],

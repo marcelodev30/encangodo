@@ -63,11 +63,8 @@ class Post extends StatelessWidget {
           const SizedBox(height: 8),
           Row(
             children: [
-              const Icon(Icons.favorite_sharp, size: 30),
-              const SizedBox(width: 10),
-              const Icon(Icons.star_border, size: 30),
-              const SizedBox(width: 10),
-              const Icon(Icons.comment, size: 30),
+              const Text('200 unidades',
+            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
               Expanded(child: Container()),
               const Text(
                 'há 2 horas',
