@@ -103,8 +103,8 @@ class NavBar extends StatelessWidget {
                           borderRadius: BorderRadius.circular(40)),
                       child: Row(
                         children: [
-                          Image.network(
-                            'https://cdn-icons-png.flaticon.com/512/3584/3584739.png',
+                          Image.asset(
+                            'img/moeda.png',
                             height: 39,
                           ),
                           const SizedBox(width: 5),

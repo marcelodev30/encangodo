@@ -18,8 +18,7 @@ class Post extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 30,
-                backgroundImage:
-                    NetworkImage('https://picsum.photos/30/30'),
+                backgroundImage: NetworkImage('https://picsum.photos/30/30'),
               ),
               const SizedBox(width: 10),
               const Column(
@@ -49,8 +48,7 @@ class Post extends StatelessWidget {
                       fontSize: 30,
                       color: Color.fromRGBO(78, 111, 67, 1))),
               GestureDetector(
-                  onTap: () {},
-                  child: const Icon(Icons.more_vert, size: 27))
+                  onTap: () {}, child: const Icon(Icons.more_vert, size: 27))
             ],
           ),
           const SizedBox(height: 8),
@@ -65,11 +63,11 @@ class Post extends StatelessWidget {
           const SizedBox(height: 8),
           Row(
             children: [
-              const Icon(Icons.favorite_sharp,size: 30),
+              const Icon(Icons.favorite_sharp, size: 30),
               const SizedBox(width: 10),
-              const Icon(Icons.star_border,size: 30),
+              const Icon(Icons.star_border, size: 30),
               const SizedBox(width: 10),
-              const Icon(Icons.comment,size: 30),
+              const Icon(Icons.comment, size: 30),
               Expanded(child: Container()),
               const Text(
                 'há 2 horas',
@@ -79,7 +77,7 @@ class Post extends StatelessWidget {
                     fontWeight: FontWeight.w400),
               ),
               const SizedBox(width: 5),
-              const Icon(Icons.share,size: 30),
+              const Icon(Icons.share, size: 30),
             ],
           )
         ],

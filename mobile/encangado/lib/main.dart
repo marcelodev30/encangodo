@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'Pages/home.pege.dart';
+//import 'Pages/home.pege.dart';
+import 'Pages/login/login.page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
             elevation: 0, color: Colors.transparent, centerTitle: true),
         colorScheme: const ColorScheme.light(background: Colors.white),
       ),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }
