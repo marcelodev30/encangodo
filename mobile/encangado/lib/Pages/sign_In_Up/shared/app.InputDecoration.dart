@@ -4,6 +4,17 @@ import 'package:encangado/shared/app.TextStyle.dart';
 import 'package:flutter/material.dart';
 
 class AppInputDecoration {
+  static get nome => InputDecoration(
+      hintText: 'Digite sua Nome..',
+      hintStyle: AppTextStyle.labelStyle,
+      prefixIcon: Icon(
+        Icons.person_outline_outlined,
+        color: AppColor.gray,
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(AppSize.borderRadiusInput),
+      ));
+
   static get telefone => InputDecoration(
       hintText: 'Digite sua Telefone..',
       hintStyle: AppTextStyle.labelStyle,
