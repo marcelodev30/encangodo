@@ -1,11 +1,12 @@
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:encangado/Pages/home.pege.dart';
-import 'package:encangado/Pages/login/shared/app.InputDecoration.dart';
+import 'package:encangado/Pages/sign_In_Up/design.page.dart';
+import 'package:encangado/Pages/sign_In_Up/shared/app.InputDecoration.dart';
 import 'package:encangado/shared/app.TextStyle.dart';
 import 'package:encangado/shared/widgets/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -17,23 +18,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color.fromRGBO(78, 111, 67, 1),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset('img/logo.svg'),
-            const SizedBox(height: 25),
-            Container(
-              width: 387,
-              height: 482,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(34.5)),
-              child: Column(
+    return DesignInUpPage(
+      dados: Column(
                 children: [
                   const SizedBox(height: 30),
                   const Text('Login',
@@ -115,11 +101,9 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ))
                 ],
-              ),
-            )
-          ],
-        ),
-      ),
-    );
+              ),)
+    
+    
+   ;
   }
 }

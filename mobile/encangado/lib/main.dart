@@ -1,7 +1,6 @@
+import 'package:encangado/Pages/sign_In_Up/login/login.page.dart';
 import 'package:flutter/material.dart';
 
-//import 'Pages/home.pege.dart';
-import 'Pages/login/login.page.dart';
 
 void main() {
   runApp(const MyApp());
