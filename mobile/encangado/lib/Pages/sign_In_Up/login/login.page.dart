@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
                   FilteringTextInputFormatter.digitsOnly,
                   TelefoneInputFormatter(),
                 ], decoration: AppInputDecoration.telefone),
-                const SizedBox(height: 10),
+                const SizedBox(height: 15),
                 TextLabe(titulo: 'Senha'),
                 TextFormField(decoration: AppInputDecoration.senha),
                 Row(
@@ -62,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                           titulo: 'Entrar',
                           color: const Color.fromRGBO(66, 107, 255, 1),
                           onTap: () {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => const HomePage()));
