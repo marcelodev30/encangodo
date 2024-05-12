@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.10+1
   brasil_fields: ^1.14.3
+  convex_bottom_bar: ^3.2.0
 
 dev_dependencies:
   flutter_test:
